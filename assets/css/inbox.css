@@ -1,0 +1,21 @@
+#messages{
+    margin : 20px;
+    width : 100%;
+    padding : 10px;
+}
+th, td{
+    border : 2px solid #19b9e7;
+    text-align : center;
+}
+.box{
+    padding : 10px;
+    margin : 10px;
+    text-align : center;
+    border : 2px solid #19b9e7;
+}
+.unread{
+    font-weight : bold;
+}
+.read{
+    font-weight : normal;
+}

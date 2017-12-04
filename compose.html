@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/assets/css/mail.css" rel="stylesheet">
+    <link href="/assets/css/compose.css" rel="stylesheet">
+    <title>CHEAPOMAIL Compose</title>
+    <script src="assets/js/compose.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js">
+	</script>
+	<script src="/assets/js/logout.js" type="text/javascript"></script>
+</head>
+
+<body> 
+    <div class="sidebar" id="sidebar">
+                <div class="logo">
+                    <a href="#" class="simple-text">
+                    <h1>Cheapomail System<h1>
+                </a>
+               	</div>
+
+                <ul class="nav">
+                    <li>
+                        <a href="compose.html">
+                            <p>Compose message</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="inbox.html">   
+                            <p>Inbox </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Outbox</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="logout" href="index.html">
+                            <p>Log Out</p>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+    <div class="content">
+        <form method="post" id="message-form"  name="message-form">
+            <h3>Send A Message</h3>
+            <p> Place a comma between different recipients</p>			
+            <div>
+                <label for="recipient">To:</label><br>
+                <input class="form-control" type="text" id="recipients" name="recipient" placeholder="Recipients" required>
+            </div>
+            <div>
+                <label for="subject">Subject:</label><br>
+                <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject">
+            </div>
+            <div>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="10" cols="40"></textarea>
+            </div>
+            <br/>
+            <button id="send" type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+
+</html>
