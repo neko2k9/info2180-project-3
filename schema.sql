@@ -21,20 +21,16 @@ recipient_ids varchar(255),
 sender_id int,
 subject text,
 body text,
-date_sent datetime,
+date_sent date,
 PRIMARY KEY (id)
 );
 
-INSERT INTO Messages VALUES 
-('','1', 'jdarien', 'Meeting', 'Mandatory meeting tomorrow', '2017-11-01 14:30:51'),
-('','2', 'mbraham', 'Testing', 'Roger That.', '2017-12-01 16:05:31'),
-('','1', 'jdarien', 'News Alert', 'Increased crime in Jamaica', '2017-12-01 16:30:51');
 
 DROP TABLE IF EXISTS Message_read;
 CREATE TABLE Message_read (
 id int NOT NULL AUTO_INCREMENT,
 message_id  int,
 reader_id   int,
-date_read   datetime,
+date_read   date,
 PRIMARY KEY (id)
 );

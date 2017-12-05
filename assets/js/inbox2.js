@@ -5,6 +5,7 @@ window.onload = function(){
     let result = null;
     $.get("assets/php/messages.php",null,function(data,status){
         result = JSON.parse(data);
+        console.log(result);
     });
     for( let index = 0; index<rows.length; index++){
         rows[index].addEventListener("click",function(){
